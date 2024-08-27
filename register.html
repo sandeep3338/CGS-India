@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+    <title>Document</title>
+</head>
+<style>
+    #main{
+    height: 100vh;
+    background-image: url('../assets/images/bg-img.avif');
+    background-size: cover;
+}
+
+.custom-shadow {
+        box-shadow: 5px 15px 10px rgba(32, 13, 198, 0.2); 
+    }
+*{
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+</style>
+ <div id="main" class= "container-fluid d-flex justify-content-center align-items-center">
+      
+        <div class="row justify-content-center  ">
+            
+            <div class="col-auto bg-white p-4 custom-shadow rounded-3 ">
+                <h2 class="text-center pt-3 pb-3 text-success text-decoration-underline">Registration Form</h2>
+                  
+                  <form id="form" class=" mb-2">
+                    <div class="form-group input-group mb-3">
+                        <div class="input-group-prepend text-center ">
+                            <span class="input-group-text pb-3"> <i class="fa fa-user pt-1"></i> </span>
+                         </div>
+                        <input name="" class="form-control" placeholder="Full name" type="text">
+                    </div> 
+                    <div class="form-group input-group mb-3">
+                        <div class="input-group-prepend ">
+                            <span class="input-group-text pb-3"> <i class="fa fa-envelope pt-1"></i> </span>
+                         </div>
+                        <input name="" class="form-control col-md-" placeholder="Email address" type="email">
+                        <input type="text" class="form-control" placeholder="Enter password" >
+
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text pb-3"> <i class="fa fa-phone pt-1"></i> </span>
+                        </div>
+                        
+                        <input name="" class="form-control" placeholder="Phone number" type="text">
+                    </div> 
+
+
+                    <div class="form-group mt-3 text-center pb-2">
+                        <label class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="gender" value="option1">
+                      <span class="form-check-label pe-3"> Male </span>
+                    </label>
+                    <label class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="gender" value="option2">
+                      <span class="form-check-label"> Female</span>
+                    </label>
+                  </div>
+
+                  <div class="form-group d-flex ">
+                    <div class="form-group col-md-6 me-1">
+                      <label>City</label>
+                      <input type="text" class="form-control">
+                    </div> 
+                    <div class="form-group col-md-6">
+                      <label>Country</label>
+                      <select id="inputState" class="form-control">
+                        <option> Choose...</option>
+                          <option>India</option>
+                          <option>Russia</option>
+                          <option >United States</option>
+                          <option>India</option>
+                          <option>Afganistan</option>
+                      </select>
+                    </div> 
+                </div> 
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Remember Password
+                  </label>
+                </div>
+                <div class="form-group mt-3 mb-2 text-center">
+                    <button type="submit" class="btn btn-primary btn-block"> Register  </button>
+                </div> 
+                    
+
+            </form>
+
+
+            </div>
+
+
+
+       </div>
+</div>
+</body>
+</html>
