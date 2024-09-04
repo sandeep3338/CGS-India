@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+</head>
+<body>
+    <div class="d-flex">
+        <div class=" col-2 " style="position: fixed; top: 0; height: 100vh; overflow-y: auto;">
+            <div id="top" class="d-flex justify-content-start align-items-center  ">
+                <img class="ps-2" src="assets/images/navbar.png" alt="" width="50px" height="40px">
+                <img class=" " src="assets/images/gmail.png" alt="" width="60px" height="30px">
+                <h5 class="my-4">Gmail</h5>
+            </div>
+            <div id="com" class="d-flex ms-3 p-2 ">
+                <button type="submit" class="btn bg-info rounded-pill  my-2" >
+                    <img  src="assets/images/pen_2.png" alt="" height="20px">
+                    Compose</button>
+            </div>
+            <div class="list-group mx-2"  >
+                <ul class="list-group" style="list-style-type: none;" >
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="img ml-2" src="assets/images/icons8-inbox-48.png" alt="" width="20px" height="30px">
+                    <li ><b  class="ps-2 text-dark">Inbox</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="ml-2 " src="assets/images/icons8-star-24.png" alt="" width="20px" height="30px">
+                    <li  ><b class="text-dark ps-2">Starred</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="ml-2 " src="assets/images/icons8-clock-24.png" alt="" width="20px" height="30px">
+                    <li ><b class="text-dark ps-2">Snoozed</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="ml-2" src="assets/images/icons8-sent-24.png" alt="" width="20px" height="30px">
+                    <li><b class="text-dark ps-2">Sent</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="ml-2" src="assets/images/icons8-draft-24.png" alt="" width="20px" height="25px">
+                    <li><b class="text-dark ps-2">Drafts</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="ml-2" src="assets/images/icons8-important-24.png" alt="" width="15px" height="25px">
+                    <li><b class="text-dark ps-2">Important</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="ml-2" src="assets/images/icons8-chats-24.png" alt="" width="20px" height="30px">
+                    <li ><b class="text-dark ps-2">Chats</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="ml-2 " src="assets/images/icons8-scheduled-delivery-58.png" alt="" width="20px" height="30px">
+                    <li ><b class="text-dark ps-2">Scheduled</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="img ml-2 mr-0" src="assets/images/icons8-mail-24.png" alt="" width="20px" height="25px">
+                    <li><b class="text-dark ps-2"> All Mail</b> </li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="ml-2" src="assets/images/icons8-spam-24.png" alt="" width="20px" height="30px">
+                    <li ><b class="text-dark ps-2">Spam</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class=" ml-2 " src="assets/images/icons8-bin-24.png" alt="" width="20px" height="25px">
+                    <li ><b class="text-dark ps-2">Bin</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class=" ml-2" src="assets/images/icons8-categories-48.png" alt="" width="20px" height="25px">
+                    <li ><b class="text-dark ps-2">Categories</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="ml-2 " src="assets/images/setting.png" alt="" width="20px" height="25px">
+                    <li ><b class="text-dark ps-2">Manage lables</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="ml-2 " src="assets/images/icons8-important-24.png" alt="" width="20px" height="25px">
+                    <li ><b class="text-dark ps-2">Important</b></li>
+                    </div>
+                    <div class="d-flex ms-2 mt-2">
+                        <img class="ml-2 " src="assets/images/icons8-plus-16.png" alt="" width="20px" height="22px">
+                    <li ><b class="text-dark ps-2 ">Create new label</b></li>
+                    </div>
+                    <div class="d-flex justify-content-between ms-2 mt-3">          
+                        <li><b class="text-dark ps-2">Labels</b></li>
+                        <img class="img ml-4 mr-0" src="assets/images/icons8-plus-16.png" alt="" width="20px" height="20px">
+                    
+                
+                    </div>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-10 offset-2" >
+            <div id="search" class="ms-3 d-flex justify-content-between align-items-center mt-2 bg-light" style="position: sticky; top: 0; overflow-y: auto; z-index: 1;">
+                <div class="d-flex align-items-center">
+
+                    <input type="text" placeholder="Search.." name="search2" 
+            class="form-control mt-2" 
+                style="
+            width: 800px; 
+            border-radius: 10px; 
+            color: rgb(81, 81, 78);
+            background-image: url('assets/images/search.png'), url('assets/images/lines.png');
+            background-repeat: no-repeat, no-repeat;
+            background-position: left 10px center, right 10px center;
+            padding-left: 40px;
+            padding-right: 50px;
+        ">
+                 
+                </div>
+               
+                <div class="d-flex align-items-center">
+                
+                <img class="me-2" src="assets/images/question.png" alt="" height="30px" width="30px">
+                <img class="me-2" src="assets/images/apps.png" alt="" height="30px" width="30px">
+
+                <div class="d-flex">
+                    
+                    <img  src="assets/images/user_edit.webp" alt="" height="65px"   >
+
+                </div>
+
+                </div>
+                
+               
+
+
+               
+                <!-- <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                  </div> -->
+                
+                <!-- <button class="btn btn-outline-light"><input type="file"></button> -->
+        
+            </div>
+       
+            <hr>
+            <div id="form" class=" d-flex overflow-y:scroll;  justify-content-center align-items-center w-100">
+                <div class="mx-5 my-5">
+                <form id="form" class="mb-2 " >
+                    <h3 class="text-center" >Profile</h3>
+
+                    <div class="text-center ">
+                    <img src="assets/images/profile.jpg" alt="" height="70px">
+                    <div >
+                        <input type="file" class="pb-3 ms-5" >
+                    </div>
+                        
+                </div>
+                    <div class="form-group input-group mb-3">
+                        <div class="input-group-prepend text-center">
+                            <span class="input-group-text pb-3"> <i class="fa fa-user pt-1"></i> </span>
+                        </div>
+                        <input name="fullName" class="form-control" placeholder="Full name" type="text">
+                    </div>
+    
+                    <div class="form-group input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text pb-3"> <i class="fa fa-envelope pt-1"></i> </span>
+                        </div>
+                        <input name="email" class="form-control" placeholder="Email address" type="email">
+                    </div>
+    
+                    <div class="form-group input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text pb-3"> <i class="fa fa-lock pt-1"></i> </span>
+                        </div>
+                        <input name="password" class="form-control" placeholder="Enter password" type="password">
+                    </div>
+    
+                    <div class="form-group input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text pb-3"> <i class="fa fa-phone pt-1"></i> </span>
+                        </div>
+                        <input name="phone" class="form-control" placeholder="Phone number" type="text">
+                    </div>
+                    <span class="m-0 p-0">Select Gender</span>
+
+                    <div class="form-group mt-3 text-start pb-3">
+                       
+                        <label class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" value="Male">
+                            <span class="form-check-label pe-3">Male  </span>
+                        </label>
+                        <label class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" value="Female">
+                            <span class="form-check-label"> Female</span>
+                        </label>
+                    </div>
+    
+                    <div class="form-group mb-3">
+                        <label>Address</label>
+                        <input type="text" name="address" class="form-control" placeholder="Street Address">
+                    </div>
+    
+                    <div class="form-group d-flex mb-3">
+                        <div class="form-group col-md-6 me-1">
+                            <label>City</label>
+                            <input type="text" name="city" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>State</label>
+                            <input type="text" name="state" class="form-control">
+                        </div>
+                    </div>
+    
+                    <div class="form-group d-flex mb-3">
+                        <div class="form-group col-md-6 me-1">
+                            <label>Postal Code</label>
+                            <input type="text" name="postalCode" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Country</label>
+                            <select name="country" id="inputState" class="form-control">
+                                <option> Choose...</option>
+                                <option>India</option>
+                                <option>Russia</option>
+                                <option>United States</option>
+                                <option>Afghanistan</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="form-group mb-3">
+                        <label>Date of Birth</label>
+                        <input type="date" name="dob" class="form-control">
+                    </div>
+    
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Remember Password
+                        </label>
+                    </div>
+    
+                    <div class="form-group mt-3 mb-2 text-center">
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+            
+        </div>
+</div>
+</body>
+</html>
