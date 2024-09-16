@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Age Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+       background-image: linear-gradient(to right, red, yellow);
+    }
+    .calculator-container {
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container calculator-container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <div class="card-body" style="  background-image:linear-gradient(to right ,#4d70c1 ,#E4EfE9) ;">
+            <h5 class="card-title text-center">Custom Age Calculator</h5>
+            <form id="ageForm">
+              <div class="mb-3">
+                <label for="birthdate" class="form-label">Enter your birthdate:</label>
+                <input type="date" id="birthdate" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="calcdate" class="form-label">Date to calculate age on:</label>
+                <input type="date" id="calcdate" class="form-control" required>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Calculate Age</button>
+            </form>
+            <hr>
+            <h6 id="ageResult" class="text-center mt-3"></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
