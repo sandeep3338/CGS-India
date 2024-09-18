@@ -1,0 +1,119 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 56px; 
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0; 
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #111;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #343a40;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        top: 0;
+        padding-top: 0;
+    }
+}
+
+main {
+    margin-top: 60px;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.album-item {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.album-item:hover {
+    transform: scale(1.05);
+}
+
+.track-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+.music-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.music-controls button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+
+
+#trackControls {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #eaeef3; 
+    z-index: 1000; 
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+#trackControls button {
+    font-size: 18px;
+    color: white;
+    margin: 0 10px;
+}
+
+
+#audioPlayer {
+    display: none;
+}
+
+
+#progressBar {
+    width: 90%; 
+    margin-left: 12%;
+    
+}
+
+#progressBar::-webkit-slider-thumb {
+    background-color: #007bff; 
+}
